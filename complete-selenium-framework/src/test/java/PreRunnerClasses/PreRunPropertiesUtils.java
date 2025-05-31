@@ -1,9 +1,8 @@
 package PreRunnerClasses;
 
-import java.io.FileReader;
 import java.util.Properties;
 
-public class PreRunnerUtils {
+public class PreRunPropertiesUtils {
 
     public static String APP_URL;
     public static String BROWSER;
@@ -13,17 +12,15 @@ public class PreRunnerUtils {
     public static String FIREFOX_BROWSER;
     public static String CHROME_BROWSER;
 
-    public static void readConfigFiles(){
-        FileReader reader = null;
+    public void readConfigFiles(){
+        Properties properties = new Properties();
         try {
-            reader = new FileReader("config.properties");
+        properties.load(getClass().getResourceAsStream("/config.properties"));
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
 
         try {
-            Properties properties = new Properties();
-            properties.load(reader);
             APP_URL = properties.getProperty("APP_URL");
             BROWSER = properties.getProperty("BROWSER");
             USERNAME = properties.getProperty("USERNAME");
