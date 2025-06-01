@@ -1,5 +1,11 @@
 package PreRunnerClasses;
 
+import HMRC.Logins.DashboardPage;
+import HMRC.Logins.DirectoryPage;
+import HMRC.Logins.LoginPage;
+import WebDriver_Manager.DriverManager;
+import org.openqa.selenium.support.PageFactory;
+
 import java.util.Properties;
 
 public class PreRunPropertiesUtils {
@@ -33,6 +39,11 @@ public class PreRunPropertiesUtils {
             throw new RuntimeException(e);
         }
 
+    }
+    public void initWebElements(){
+        PageFactory.initElements(DriverManager.getDriver(), LoginPage.class);
+        PageFactory.initElements(DriverManager.getDriver(), DashboardPage.class);
+        PageFactory.initElements(DriverManager.getDriver(), DirectoryPage.class);
     }
 
 }
