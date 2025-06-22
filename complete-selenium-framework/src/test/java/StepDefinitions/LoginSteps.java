@@ -2,7 +2,7 @@ package StepDefinitions;
 
 import HMRC.Logins.DashboardPage;
 import HMRC.Logins.LoginPage;
-import PreRunnerClasses.PreRunPropertiesUtils;
+import Utils.CommonSetupUtils;
 import WebDriver_Manager.DriverManager;
 import io.cucumber.java.en.*;
 import org.apache.logging.log4j.LogManager;
@@ -22,7 +22,7 @@ public class LoginSteps {
     @Given("platform navigates to login page")
     public void platform_navigates_to_login_page() {
         logger.info("Platform navigates to login page");
-        driver.get(PreRunPropertiesUtils.APP_URL);
+        driver.get(CommonSetupUtils.APP_URL);
     }
 
     @When("user enters valid credentials")
@@ -30,9 +30,9 @@ public class LoginSteps {
 
         logger.info("Entering the credentials username and password");
         wait.until(ExpectedConditions.visibilityOf(LoginPage.USERNAME));
-        LoginPage.USERNAME.sendKeys(PreRunPropertiesUtils.USERNAME);
+        LoginPage.USERNAME.sendKeys(CommonSetupUtils.USERNAME);
         wait.until(ExpectedConditions.visibilityOf(LoginPage.PASSWORD));
-        LoginPage.PASSWORD.sendKeys(PreRunPropertiesUtils.PASSWORD);
+        LoginPage.PASSWORD.sendKeys(CommonSetupUtils.PASSWORD);
         LoginPage.SUBMIT.click();
         logger.info("Credentials Working fine, login into platform");
     }

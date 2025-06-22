@@ -1,6 +1,6 @@
 package WebDriver_Manager;
 
-import PreRunnerClasses.PreRunPropertiesUtils;
+import Utils.CommonSetupUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -17,8 +17,8 @@ public class DriverManager {
 
     public static void launchBrowser() {
         try {
-            logger.info("The Browser Selected: " + PreRunPropertiesUtils.EDGE_BROWSER.toLowerCase().trim());
-            switch (PreRunPropertiesUtils.EDGE_BROWSER.toLowerCase().trim()) {
+            logger.info("The Browser Selected: " + CommonSetupUtils.EDGE_BROWSER.toLowerCase().trim());
+            switch (CommonSetupUtils.EDGE_BROWSER.toLowerCase().trim()) {
                 case "chrome":
                     chromedriver().setup();
                     driver = new ChromeDriver();

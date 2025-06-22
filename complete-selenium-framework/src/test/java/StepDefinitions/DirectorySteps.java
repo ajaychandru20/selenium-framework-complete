@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import HMRC.Logins.DirectoryPage;
+import Utils.CommonSetupUtils;
 import WebDriver_Manager.DriverManager;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -22,67 +23,74 @@ public class DirectorySteps {
 
     @And("select the Directory navbar, check the field names")
     public void select_the_directory_navbar_check_the_field_names() {
-        logger.info("select the Navbar Directory");
-        wait.until(ExpectedConditions.visibilityOf(DirectoryPage.DirectoryNavbar));
-        DirectoryPage.DirectoryNavbar.click();
+        try {
+            logger.info("Selecting the Directory navbar...");
+            wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().getDirectoryNavbar()));
+            DirectoryPage.getInstance().getDirectoryNavbar().click();
 
-        // Log: Waiting for Directory title to be visible
-        logger.info("Waiting for the Directory title bar to be visible.");
-        wait.until(ExpectedConditions.visibilityOf(DirectoryPage.DirectoryTitleBar));
+            logger.info("Waiting for the Directory title bar to be visible.");
+            wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().DirectoryTitleBar));
+            String actualDirectoryHeader = DirectoryPage.getInstance().DirectoryTitleBar.getText();
+            logger.info("Fetched Directory title: '{}'", actualDirectoryHeader);
+            assertEquals("Directory", actualDirectoryHeader, "The field does not contain 'Directory'");
+            logger.info("Assertion passed: Directory title is correct.");
 
-        // Get and log the actual header text
-        String actualDirectoryHeader = DirectoryPage.DirectoryTitleBar.getText();
-        logger.info("Fetched Directory title: '{}'", actualDirectoryHeader);
+            logger.info("Waiting for Employee Name header to be visible.");
+            wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().getEmployeeNameHeader()));
+            String actualEmpHeader = DirectoryPage.getInstance().getEmployeeNameHeader().getText();
+            logger.info("Fetched Employee Name header: '{}'", actualEmpHeader);
+            assertEquals("Employee Name", actualEmpHeader, "The field does not contain 'Employee Name'");
+            logger.info("Assertion passed: Employee Name header is correct.");
 
-        // Assert and log result
-        assertEquals("Directory", actualDirectoryHeader, "The field does not contain 'Directory'");
-        logger.info("Assertion passed: Directory title is correct.");
+            logger.info("Waiting for Job Title header to be visible.");
+            wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().getJobTitleHeader()));
+            String actualJobTitleHeader = DirectoryPage.getInstance().getJobTitleHeader().getText();
+            logger.info("Fetched Job Title header: '{}'", actualJobTitleHeader);
+            assertEquals("Job Title", actualJobTitleHeader, "The field does not contain 'Job Title'");
+            logger.info("Assertion passed: Job Title header is correct.");
 
-        // Log: Waiting for Employee Name header to be visible
-        logger.info("Waiting for Employee Name header to be visible.");
-        wait.until(ExpectedConditions.visibilityOf(DirectoryPage.EmployeeNameHeader));
+            logger.info("Waiting for Location header to be visible.");
+            wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().getLocationHeader()));
+            String actualLocationHeader = DirectoryPage.getInstance().getLocationHeader().getText();
+            logger.info("Fetched Location header: '{}'", actualLocationHeader);
+            assertEquals("Location", actualLocationHeader, "The field does not contain 'Location'");
+            logger.info("Assertion passed: Location header is correct.");
 
-        // Get and log the actual employee header
-        String actualEmpHeader = DirectoryPage.EmployeeNameHeader.getText();
-        logger.info("Fetched Employee Name header: '{}'", actualEmpHeader);
-
-        // Assert and log result
-        assertEquals("Employee Name", actualEmpHeader, "The field does not contain 'Employee Name'");
-        logger.info("Assertion passed: Employee Name header is correct.");
-
-
-        wait.until((ExpectedConditions.visibilityOf(DirectoryPage.JobTitleHeader)));
-        String ActualJobTitleHeader = DirectoryPage.JobTitleHeader.getText();
-        assertEquals("Job Title", ActualJobTitleHeader, "The Field does not contain, Job Title");
-        logger.info("Assertion passed: Job Title header is correct.");
-
-        wait.until((ExpectedConditions.visibilityOf(DirectoryPage.LocationHeader)));
-        String ActualLocationHeader = DirectoryPage.LocationHeader.getText();
-        assertEquals("Location", ActualLocationHeader, "The Field does not contain, Location");
-        logger.info("Assertion passed: Location header is correct.");
-
+        } catch (AssertionError ae) {
+            logger.error("Assertion failed: " + ae.getMessage());
+            CommonSetupUtils.getInstance().takeScreenShot();
+            throw ae; // Re-throw to fail the scenario
+        } catch (Exception e) {
+            logger.error("Unexpected error: ", e);
+            CommonSetupUtils.getInstance().takeScreenShot();
+            throw new RuntimeException(e);
+        }
     }
 
 
     @Then("select the employee role {string} in the job title dropdown")
     public void select_the_employee_role_in_the_job_title_dropdown(String JobRole) {
 
-        logger.info("Select the Employee Role in the Dropdown");
-        wait.until(ExpectedConditions.visibilityOf(DirectoryPage.JobTitleDropdown));
-        DirectoryPage.JobTitleDropdown.click();
-        List<WebElement> options = DriverManager.getDriver().findElements(By.className("oxd-select-option"));
-        for (WebElement option : options) {
-            if (option.getText().equalsIgnoreCase(JobRole)) {
-                logger.info("Selected Employee Role is: '{}'", option.getText());
-                option.click();
-                break;
-                                                                                                                                                                                                                            }
+        try {
+            logger.info("Select the Employee Role in the Dropdown");
+            wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().getJobTitleDropdown()));
+            DirectoryPage.getInstance().getJobTitleDropdown().click();
+            List<WebElement> options = DriverManager.getDriver().findElements(By.className("oxd-select-option"));
+            for (WebElement option : options) {
+                if (option.getText().equalsIgnoreCase(JobRole)) {
+                    logger.info("Selected Employee Role is: '{}'", option.getText());
+                    option.click();
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            logger.error(e);
+            CommonSetupUtils.getInstance().takeScreenShot();
         }
 
-        DirectoryPage.SearchButton.click();
+        DirectoryPage.getInstance().getSearchButton().click();
 
         DriverManager.getDriver().quit();
-
 
     }
 }
