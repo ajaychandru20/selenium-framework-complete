@@ -1,0 +1,273 @@
+2025-06-24 21:16:41 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 21:16:41 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 21:16:41 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 21:16:44 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 21:16:49 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 21:16:52 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 21:16:52 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 21:16:53 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 21:16:54 [ERROR] DirectorySteps - org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "div"
+Build info: version: '4.31.0', revision: '1ef9f18787*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.11.0-26-generic', java.version: '21.0.7'
+Driver info: driver.version: unknown
+2025-06-24 21:16:54 [INFO ] DirectorySteps - Screenshot saved: src/test/resources/ScreenShots/Verify the directory details contains mention employee details_20250624_211654.png
+2025-06-24 21:19:04 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 21:19:04 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 21:19:04 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 21:19:05 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 21:19:09 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 21:19:12 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 21:19:12 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 21:19:13 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 21:19:14 [INFO ] DirectorySteps - Selected Employee Role is: 'HR Manager'
+2025-06-24 22:48:48 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 22:48:48 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 22:48:48 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 22:48:50 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 22:48:55 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 22:48:56 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 22:48:56 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 22:48:58 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 22:48:59 [INFO ] DirectorySteps - Selected Employee Role is: 'HR Manager'
+2025-06-24 22:49:53 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 22:49:53 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 22:49:53 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 22:49:55 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 22:49:59 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 22:50:00 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 22:50:00 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 22:50:03 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 22:50:45 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 22:50:45 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 22:50:45 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 22:50:46 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 22:50:50 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 22:50:53 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 22:50:53 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 22:50:54 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 22:50:55 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 22:50:55 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 22:50:55 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 22:51:41 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 22:51:41 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 22:51:41 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 22:51:43 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 22:51:46 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 22:51:49 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 22:51:49 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 22:51:50 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 22:51:51 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 22:54:49 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 22:54:49 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 22:54:49 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 22:54:51 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 22:54:55 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 22:54:58 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 22:54:58 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 22:54:59 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 22:55:00 [INFO ] DirectorySteps - Selected Employee Role is: 'HR Manager'
+2025-06-24 22:55:15 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 22:55:15 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 22:55:15 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 22:55:16 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 22:55:20 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 22:55:22 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 22:55:22 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 22:55:24 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 22:55:24 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 22:55:24 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 22:55:24 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 22:55:25 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 22:57:16 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 22:57:16 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 22:57:16 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 22:57:18 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 22:57:22 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 22:57:25 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 22:57:25 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 22:57:26 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 22:57:27 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 22:58:39 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 22:58:39 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 22:58:39 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 22:58:41 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 22:58:45 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 22:58:47 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 22:58:47 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 22:58:48 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 22:58:49 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 23:00:02 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 23:00:02 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 23:00:02 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 23:00:04 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 23:00:08 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 23:00:11 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 23:00:11 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 23:00:12 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 23:00:12 [ERROR] DirectorySteps - Option dropdown not selected So No records found in Options
+2025-06-24 23:00:13 [INFO ] DirectorySteps - Screenshot saved: src/test/resources/ScreenShots/Verify the directory details contains mention employee details_20250624_230012.png
+2025-06-24 23:00:58 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 23:00:58 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 23:00:58 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 23:01:00 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 23:01:04 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 23:01:06 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 23:01:06 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 23:01:07 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 23:01:08 [ERROR] DirectorySteps - Option dropdown not selected So No records found in Options
+2025-06-24 23:01:08 [INFO ] DirectorySteps - Screenshot saved: src/test/resources/ScreenShots/Verify the directory details contains mention employee details_20250624_230108.png
+2025-06-24 23:01:25 [INFO ] CommonHooks_Step_Definition - Running BeforeScenario for scenario: Verify the directory details contains mention employee details
+2025-06-24 23:01:25 [INFO ] CommonHooks_Step_Definition - Launching browser from Common_Step_Definition...
+2025-06-24 23:01:25 [INFO ] DriverManager - The Browser Selected: chrome
+2025-06-24 23:01:26 [INFO ] LoginSteps - Platform navigates to login page
+2025-06-24 23:01:32 [INFO ] LoginSteps - Entering the credentials username and password
+2025-06-24 23:01:33 [INFO ] LoginSteps - Credentials Working fine, login into platform
+2025-06-24 23:01:33 [INFO ] DirectorySteps - Selecting the Directory navbar...
+2025-06-24 23:01:35 [INFO ] DirectorySteps - Waiting for the Directory title bar to be visible.
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Fetched Directory title: 'Directory'
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Assertion passed: Directory title is correct.
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Waiting for Employee Name header to be visible.
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Fetched Employee Name header: 'Employee Name'
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Assertion passed: Employee Name header is correct.
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Waiting for Job Title header to be visible.
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Fetched Job Title header: 'Job Title'
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Assertion passed: Job Title header is correct.
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Waiting for Location header to be visible.
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Fetched Location header: 'Location'
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Assertion passed: Location header is correct.
+2025-06-24 23:01:36 [INFO ] DirectorySteps - Select the Employee Role in the Dropdown
+2025-06-24 23:01:37 [INFO ] DirectorySteps - Selected Employee Role is: HR Manager

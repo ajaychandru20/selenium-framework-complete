@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -59,33 +60,43 @@ public class DirectorySteps {
         } catch (AssertionError ae) {
             logger.error("Assertion failed: " + ae.getMessage());
             CommonSetupUtils.getInstance().takeScreenShot();
-            throw ae; // Re-throw to fail the scenario
+            Assert.fail(ae.getMessage());
         } catch (Exception e) {
             logger.error("Unexpected error: ", e);
             CommonSetupUtils.getInstance().takeScreenShot();
-            throw new RuntimeException(e);
+            Assert.fail(e.getMessage());
         }
     }
 
 
-    @Then("select the employee role {string} in the job title dropdown")
-    public void select_the_employee_role_in_the_job_title_dropdown(String JobRole) {
+    @Then("select the employee role {string} in the job title dropdown using {string}")
+    public void select_the_employee_role_in_the_job_title_dropdown(String JobRole, String howToSelectDropdown) {
 
         try {
             logger.info("Select the Employee Role in the Dropdown");
             wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().getJobTitleDropdown()));
             DirectoryPage.getInstance().getJobTitleDropdown().click();
+//            CommonSetupUtils.getInstance().selectDropDown(DirectoryPage.getInstance().getJobTitleDropdown(), howToSelectDropdown, JobRole);
             List<WebElement> options = DriverManager.getDriver().findElements(By.className("oxd-select-option"));
-            for (WebElement option : options) {
-                if (option.getText().equalsIgnoreCase(JobRole)) {
-                    logger.info("Selected Employee Role is: '{}'", option.getText());
-                    option.click();
-                    break;
+            if (!options.isEmpty()){
+                for (WebElement option : options) {
+                    if (option.getText().equalsIgnoreCase(JobRole)) {
+                        logger.info("Selected Employee Role is: " + option.getText());
+                        option.click();
+                        Thread.sleep(2000);
+                        break;
+                    }
                 }
+            }else{
+                logger.error("Option dropdown not selected So No records found in Options");
+                CommonSetupUtils.getInstance().takeScreenShot();
+                Assert.fail("No records found in Options");
             }
+
         } catch (Exception e) {
             logger.error(e);
             CommonSetupUtils.getInstance().takeScreenShot();
+            Assert.fail(e.getMessage());
         }
 
         DirectoryPage.getInstance().getSearchButton().click();

@@ -10,7 +10,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -31,7 +33,8 @@ public class CommonSetupUtils {
     private static CommonSetupUtils commonSetupUtilsInstance;
     private static final Logger logger = LogManager.getLogger(DirectorySteps.class);
 
-    private CommonSetupUtils() {}
+    private CommonSetupUtils() {
+    }
 
     public static CommonSetupUtils getInstance() {
         if (commonSetupUtilsInstance == null) {
@@ -92,5 +95,25 @@ public class CommonSetupUtils {
         } catch (Exception e) {
             logger.error("Error while taking screenshot", e);
         }
+    }
+
+    public void selectDropDown(WebElement webelement, String howTo, String value) {
+
+        Select select = new Select(webelement);
+        switch (howTo) {
+            case "index":
+                select.selectByIndex(Integer.parseInt(value));
+                break;
+            case "text":
+                select.selectByVisibleText(value);
+                break;
+            case "value":
+                select.selectByValue(value);
+                break;
+            default:
+                logger.info("Please select the valid dropdown format, like text, index or value.");
+                break;
+        }
+
     }
 }

@@ -6,13 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features/Directory.feature",
-        glue = "StepDefinitions",
+        features = "@target/failed_scenarios.txt",
 //        dryRun = true,
         monochrome = true,
-        plugin = {"rerun:target/failed_scenarios.txt"}
+        glue = "StepDefinitions"
 )
-public class TestRunner {
-
-
+public class ReRunner {
 }
