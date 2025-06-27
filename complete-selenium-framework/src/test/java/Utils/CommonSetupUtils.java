@@ -5,6 +5,8 @@ import HMRC.Logins.DirectoryPage;
 import HMRC.Logins.LoginPage;
 import StepDefinitions.DirectorySteps;
 import WebDriver_Manager.DriverManager;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,7 +33,7 @@ public class CommonSetupUtils {
 
     private static String scenarioName = null;
     private static CommonSetupUtils commonSetupUtilsInstance;
-    private static final Logger logger = LogManager.getLogger(DirectorySteps.class);
+    private static final Logger logger = LogManager.getLogger(CommonSetupUtils.class);
 
     private CommonSetupUtils() {
     }
@@ -62,14 +64,15 @@ public class CommonSetupUtils {
             EDGE_BROWSER = properties.getProperty("EDGE_BROWSER");
             FIREFOX_BROWSER = properties.getProperty("FIREFOX_BROWSER");
             CHROME_BROWSER = properties.getProperty("CHROME_BROWSER");
+            logger.info("Properties data are run successfully");
         } catch (Exception e) {
             logger.error("Failed to load config.properties", e);
         }
     }
 
     public void initWebElements() {
-        PageFactory.initElements(DriverManager.getDriver(), LoginPage.class);
-        PageFactory.initElements(DriverManager.getDriver(), DashboardPage.class);
+        PageFactory.initElements(DriverManager.getDriver(), LoginPage.getInstance());
+        PageFactory.initElements(DriverManager.getDriver(), DashboardPage.getInstance());
         PageFactory.initElements(DriverManager.getDriver(), DirectoryPage.getInstance());
     }
 
@@ -96,6 +99,7 @@ public class CommonSetupUtils {
             logger.error("Error while taking screenshot", e);
         }
     }
+
 
     public void selectDropDown(WebElement webelement, String howTo, String value) {
 

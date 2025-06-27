@@ -33,7 +33,7 @@ public class DirectorySteps {
             wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().DirectoryTitleBar));
             String actualDirectoryHeader = DirectoryPage.getInstance().DirectoryTitleBar.getText();
             logger.info("Fetched Directory title: '{}'", actualDirectoryHeader);
-            assertEquals("Directory", actualDirectoryHeader, "The field does not contain 'Directory'");
+            assertEquals("Direc", actualDirectoryHeader, "The field does not contain 'Directory'");
             logger.info("Assertion passed: Directory title is correct.");
 
             logger.info("Waiting for Employee Name header to be visible.");
@@ -44,7 +44,7 @@ public class DirectorySteps {
             logger.info("Assertion passed: Employee Name header is correct.");
 
             logger.info("Waiting for Job Title header to be visible.");
-            wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().getJobTitleHeader()));
+            wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().JobTitleDropdown));
             String actualJobTitleHeader = DirectoryPage.getInstance().getJobTitleHeader().getText();
             logger.info("Fetched Job Title header: '{}'", actualJobTitleHeader);
             assertEquals("Job Title", actualJobTitleHeader, "The field does not contain 'Job Title'");
@@ -59,11 +59,11 @@ public class DirectorySteps {
 
         } catch (AssertionError ae) {
             logger.error("Assertion failed: " + ae.getMessage());
-            CommonSetupUtils.getInstance().takeScreenShot();
+//            CommonSetupUtils.getInstance().takeScreenShot();
             Assert.fail(ae.getMessage());
         } catch (Exception e) {
             logger.error("Unexpected error: ", e);
-            CommonSetupUtils.getInstance().takeScreenShot();
+//            CommonSetupUtils.getInstance().takeScreenShot();
             Assert.fail(e.getMessage());
         }
     }
@@ -89,13 +89,13 @@ public class DirectorySteps {
                 }
             }else{
                 logger.error("Option dropdown not selected So No records found in Options");
-                CommonSetupUtils.getInstance().takeScreenShot();
+//                CommonSetupUtils.getInstance().takeScreenShot();
                 Assert.fail("No records found in Options");
             }
 
         } catch (Exception e) {
             logger.error(e);
-            CommonSetupUtils.getInstance().takeScreenShot();
+//            CommonSetupUtils.getInstance().takeScreenShot();
             Assert.fail(e.getMessage());
         }
 
