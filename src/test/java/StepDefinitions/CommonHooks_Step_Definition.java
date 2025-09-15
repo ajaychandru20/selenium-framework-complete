@@ -24,6 +24,7 @@ public class CommonHooks_Step_Definition {
     @Before
     public void beforeScenario(Scenario scenario) {
         CommonSetupUtils.setScenarioName(scenario.getName());
+        logger.info("BeforeHooks---------------------------------------------------");
         logger.info("Running BeforeScenario for scenario: " + scenario.getName());
 
         CommonSetupUtils.getInstance().readConfigFiles();

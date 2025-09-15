@@ -33,7 +33,7 @@ public class DirectorySteps {
             wait.until(ExpectedConditions.visibilityOf(DirectoryPage.getInstance().DirectoryTitleBar));
             String actualDirectoryHeader = DirectoryPage.getInstance().DirectoryTitleBar.getText();
             logger.info("Fetched Directory title: '{}'", actualDirectoryHeader);
-            assertEquals("Direc", actualDirectoryHeader, "The field does not contain 'Directory'");
+            assertEquals("Directory", actualDirectoryHeader, "The field does not contain 'Directory'");
             logger.info("Assertion passed: Directory title is correct.");
 
             logger.info("Waiting for Employee Name header to be visible.");
